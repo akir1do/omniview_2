@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../main.dart';
 
 class SubscriptionTiersScreen extends StatefulWidget {
-  const SubscriptionTiersScreen({Key? key}) : super(key: key);
+  const SubscriptionTiersScreen({super.key});
 
   @override
   State<SubscriptionTiersScreen> createState() => _SubscriptionTiersScreenState();

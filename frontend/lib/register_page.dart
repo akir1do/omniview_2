@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 // Abstract parent class for authentication pages
 abstract class AuthPage extends StatelessWidget {
-  const AuthPage({Key? key}) : super(key: key);
+  const AuthPage({super.key});
 
   // Child classes 
   Widget buildForm(BuildContext context);
@@ -44,7 +44,7 @@ abstract class AuthPage extends StatelessWidget {
 
 // Title TExt
 class RegisterPage extends AuthPage {
-  const RegisterPage({Key? key}) : super(key: key);
+  const RegisterPage({super.key});
 
   @override
   Widget buildForm(BuildContext context) {
@@ -70,7 +70,7 @@ class RegisterPage extends AuthPage {
 
 // Email and Password Box
 class RegisterFormFields extends StatelessWidget {
-  const RegisterFormFields({Key? key}) : super(key: key);
+  const RegisterFormFields({super.key});
 
   @override
   Widget build(BuildContext context) {

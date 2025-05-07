@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // -==-=-=-=-=-=-=- AREA WHHERE TO PUT THE CAMERA PREVIEW
 
 class CameraBox extends StatelessWidget {
-  const CameraBox({Key? key}) : super(key: key);
+  const CameraBox({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class CameraBox extends StatelessWidget {
 //-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=end of line
 
 class CameraUI extends StatefulWidget {
-  const CameraUI({Key? key}) : super(key: key);
+  const CameraUI({super.key});
 
   @override
   State<CameraUI> createState() => _CameraUIState();

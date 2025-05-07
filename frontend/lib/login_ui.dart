@@ -7,7 +7,7 @@ const double kTopSpacing = 32; // <-- Edit top spacing here
 const double kButtonSpacing = 32; // <-- Edit spacing above button here
 
 class LoginUI extends StatefulWidget {
-  const LoginUI({Key? key}) : super(key: key);
+  const LoginUI({super.key});
 
   @override
   State<LoginUI> createState() => _LoginUIState();
@@ -236,7 +236,7 @@ class _LoginButton extends StatelessWidget {
 //welcome animation
 class WelcomeScreen extends StatefulWidget {
   final String username;
-  const WelcomeScreen({Key? key, required this.username}) : super(key: key);
+  const WelcomeScreen({super.key, required this.username});
 
   @override
   State<WelcomeScreen> createState() => _WelcomeScreenState();
@@ -313,7 +313,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
 
 // --- Forgot Password Area ---
 class ForgotPasswordScreen extends StatelessWidget {
-  const ForgotPasswordScreen({Key? key}) : super(key: key);
+  const ForgotPasswordScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -408,7 +408,7 @@ class ForgotPasswordScreen extends StatelessWidget {
 class WelcomeTopLeftText extends StatelessWidget {
   // To change the vertical position, adjust the 'topPadding' parameter.
   final double topPadding;
-  const WelcomeTopLeftText({Key? key, this.topPadding = 10.0}) : super(key: key);
+  const WelcomeTopLeftText({super.key, this.topPadding = 10.0});
 
   @override
   Widget build(BuildContext context) {

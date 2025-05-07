@@ -6,7 +6,7 @@ import '../main.dart'; // Import ThemeNotifier
 
 class SelectionScreen extends StatelessWidget {
   final String username;
-  const SelectionScreen({Key? key, required this.username}) : super(key: key);
+  const SelectionScreen({super.key, required this.username});
 
   @override
   Widget build(BuildContext context) {
@@ -134,8 +134,8 @@ class _SelectionBox extends StatelessWidget {
     required this.onTap,
     this.trailing,
     this.isDark = false,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -190,7 +190,7 @@ class _SelectionBox extends StatelessWidget {
 
 class Design extends StatelessWidget {
   final bool isDark;
-  const Design({Key? key, this.isDark = false}) : super(key: key);
+  const Design({super.key, this.isDark = false});
 
   @override
   Widget build(BuildContext context) {
